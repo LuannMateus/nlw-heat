@@ -1,6 +1,6 @@
 import express, { Application } from 'express';
 import cors from 'cors';
-import { authRouter, messageRouter } from './routes';
+import { authRouter, messageRouter, profileRouter } from './routes';
 
 class App {
   private app: Application;
@@ -24,6 +24,7 @@ class App {
   public routes() {
     this.app.use('/api/v1', authRouter);
     this.app.use('/api/v1', messageRouter);
+    this.app.use('/api/v1', profileRouter);
   }
 
   public get getApp() {
