@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import { authRouter } from './routes';
+import { authRouter, messageRouter } from './routes';
 
 class App {
   private app: Application;
@@ -21,6 +21,7 @@ class App {
 
   public routes() {
     this.app.use('/api/v1', authRouter);
+    this.app.use('/api/v1', messageRouter);
   }
 
   public get getApp() {

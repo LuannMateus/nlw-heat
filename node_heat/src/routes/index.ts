@@ -1,3 +1,4 @@
 import { authRouter } from './authRoutes';
+import { messageRouter } from './messageRoutes';
 
-export { authRouter };
+export { authRouter, messageRouter };
