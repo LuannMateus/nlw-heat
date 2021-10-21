@@ -1,6 +1,6 @@
 import { MotiView } from '@motify/components';
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, View } from 'react-native';
 
 import { UserPhoto } from '../UserPhoto';
 
@@ -8,11 +8,13 @@ import { styles } from './styles';
 
 export type MessageProps = {
   id: string;
+  created_at: string;
   text: string;
   user: {
-    name: string;
     avatar_url: string;
+    name: string;
   };
+  user_id: string;
 };
 
 type Props = {
