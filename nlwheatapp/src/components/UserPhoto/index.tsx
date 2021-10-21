@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import avatarImg from '../../assets/avatar.png';
 
