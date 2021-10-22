@@ -2,7 +2,6 @@ defmodule HeatTagsWeb.MessagesController do
   use HeatTagsWeb, :controller
 
   alias HeatTags.Message
-  alias HeatTags.Messages.Create
 
   def create(conn, params) do
     params
